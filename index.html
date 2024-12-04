@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio website - Ikkyu</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+</head>
+<body>
+
+
+    <header class="active">
+        <!-- <a href="#" class="logo">อิคคิว</a> -->
+        <a href="#" class="logo">
+            <img src="images/home.jpg" alt="Logo" width="55" height="55">
+        </a>
+        
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav>
+            <a href="#" class="active">หน้าเเรก</a>
+            <!-- <a href="#">การทำงาน</a>-->
+            <a href="#">ประวัติส่วนตัว</a>
+            <a href="#">โปรเจค</a>
+            <a href="#">ติดต่อ</a>
+        </nav>
+    </header>
+
+    <div class="bars-box active">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <!-- home section-->
+    <section class="home active">
+        <div class="home-detail">
+            <h1>กฤษฎิ์ชยิน คัมภีรยศ</h1>
+            <h2>ผมเป็น
+                <span style="--i:4;" data-text="UX/UI Designer">UX/UI Designer</span>
+                <span style="--i:3;" data-text="Fullstack Developer">Fullstack Developer</span>
+                <span style="--i:2;" data-text="RPA Developer">RPA Developer</span>
+                <span style="--i:1;" data-text="Software Tester">Software Tester</span>
+            </h2>
+            <p> สวัสดีครับ ผมอิคคิว ผมเป็น Fullstack Developer ที่มีความสามารถในการพัฒนาเว็บแอปพลิเคชันทั้ง Frontend และ Backend รวมถึงเป็น UX/UI Designer 
+                ที่มุ่งเน้นการออกแบบประสบการณ์ผู้ใช้ที่ใช้งานง่ายและมีประสิทธิภาพ นอกจากนี้ ผมยังเป็น Software Tester ที่มีทักษะในการตรวจสอบคุณภาพของซอฟต์แวร์และลดข้อผิดพลาดต่าง ๆ 
+                เพื่อให้แน่ใจว่าโปรแกรมทำงานได้ดี และผมยังเป็น RPA Developer ที่ช่วยเพิ่มประสิทธิภาพการทำงานด้วยการพัฒนาโซลูชันอัตโนมัติที่ช่วยลดขั้นตอนที่ซ้ำซากและเพิ่มความรวดเร็วในการทำงาน</p>
+            <div class="btn-sci">
+                <a href="https://drive.usercontent.google.com/u/0/uc?id=1ksEmDtghydtL8TroueFmWJaL7F9HOLku&export=download" download class="btn" target="_blank">ดาวน์โหลด CV</a>
+                <div class="sci">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Ikkyu1080ti" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <!-- <a href="#"><i class='bx bxl-twitter'></i></a> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="images/home.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="resume">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>ทำไมต้องจ้างผม?</h2>
+                <p class="desc">ผมมีทักษะหลากหลายที่ครอบคลุม ซึ่งทำให้ผมสามารถพัฒนาและปรับปรุงผลิตภัณฑ์ได้อย่างครบวงจร จากการออกแบบประสบการณ์ผู้ใช้ที่ใช้งานง่าย 
+                    ไปจนถึงการพัฒนาระบบที่มีประสิทธิภาพและการทดสอบที่มั่นใจในคุณภาพ ผมมุ่งมั่นที่จะช่วยเพิ่มประสิทธิภาพและผลลัพธ์ที่ดีที่สุดให้กับทีมและบริษัทของคุณ</p>
+                    <button class="resume-btn active">ประสบการณ์</button>
+                    <button class="resume-btn">การศึกษา</button>
+                    <button class="resume-btn">ทักษะ</button>
+                    <button class="resume-btn">เกี่ยวกับฉัน</button>
+            </div>
+
+            <div class="resume-box">
+                <div class="resume-detail experience active">
+                    <h2 class="heading"><span>ประสบการณ์</span></h2>
+                    <p class="desc"></p>
+                        <div class="resume-list">
+
+                            <div class="resume-item">
+                                <p class="year"><br>Jun. 2023 -  Oct.2024</p>
+                                <h3>Digital Design and Development Officer</h3>
+                                <p class="company">AutoX</p>
+                                <p> พัฒนาและปรับปรุงเว็บไซต์ด้วย HTML และ CSS, ออกแบบและพัฒนาระบบต่างๆ ภายในองค์กร, 
+                                    ระบุตำแหน่งและจัดการข้อมูลสาขาทั่วประเทศบน Google Maps (กว่า 2000 สาขา),
+                                    วิเคราะห์แนวโน้มการเติบโตขององค์กร, สอนการใช้งานระบบต่าง ๆ และจัดทำคู่มือการใช้งานกับผู้ใช้งาน, 
+                                    วิเคราะห์พฤติกรรมผู้ใช้เพื่อพัฒนาระบบให้ตรงกับกลุ่มเป้าหมาย, เขียนระบบ Robotic Process Automation (RPA), 
+                                    ให้คำปรึกษาและช่วยแก้ปัญหาต่าง ๆ ให้กับพนักงาน, พัฒนาและบริหารจัดการ Line Official Accounts สำหรับทุกสาขาทั่วประเทศ.</p>
+                            </div>
+                                                        
+                            <div class="resume-item">
+                                <p class="year">May. 2021 - May. 2023</p>
+                                <h3>UX/UI Designer</h3>
+                                <p class="company">SIS Corp. Ltd.</p>
+                                <p> ออกแบบ wireframes และ prototypes เพื่อลองทดสอบแนวคิดการออกแบบ, ออกแบบและพัฒนาแอปพลิเคชันบนแพลตฟอร์มต่างๆ, 
+                                    สร้างตัวละครที่เหมาะสมกับกลุ่มเป้าหมาย. ปรับปรุงการออกแบบแอปพลิเคชันให้ทันสมัยตามความก้าวหน้าทางเทคโนโลยี, กำหนดตำแหน่ง, 
+                                    รูปแบบ และการออกแบบโดยใช้ 3D, ออกแบบเว็บไซต์ที่ตอบสนองกลุ่มผู้ใช้. วิเคราะห์กลุ่มตลาดของบริษัท, ออกแบบสติกเกอร์ LINE, 
+                                    และสร้างโฆษณาที่เน้นจุดแข็งของบริษัทด้วยโทนสีที่จำง่าย..</p>
+                            </div>
+
+                            <div class="resume-item">
+                                <p class="year">Nov. 2020 - Mar. 2021</p>
+                                <h3>UI Designer & QA Tester</h3>
+                                <p class="company">CPMatch</p>
+                                <p> เพิ่มพูนความรู้เกี่ยวกับเทคโนโลยีและแพลตฟอร์มที่เกี่ยวข้อง รวมถึงภาษาโปรแกรมและซอฟต์แวร์, ออกแบบหน้าเว็บรวมถึงหน้าจอแสดงความคืบหน้าการดาวน์โหลด, 
+                                    เข้าใจความต้องการและพฤติกรรมของผู้ใช้ผ่านการสัมภาษณ์, การสำรวจ, และการวิเคราะห์ข้อมูล. สร้าง personas และ user journey maps, 
+                                    ออกแบบโครงสร้างเว็บไซต์หรือแอปพลิเคชันเพื่อให้ใช้งานง่ายและมีประสิทธิภาพ, พัฒนาทักษะใน Responsive Design. ประเมินฟังก์ชันการทำงานของแอป, 
+                                    ตรวจสอบข้อบกพร่องหรือช่องโหว่ในระบบ, รายงานข้อผิดพลาดและติดตามการแก้ไขร่วมกับทีมพัฒนา.</p>
+                            </div>
+
+
+                        </div>
+                </div>
+
+                <div class="resume-detail education">
+                    <h2 class="heading"><span>การศึกษา</span></h2>
+                    <p class="desc"></p>
+                        <div class="resume-list">
+
+                            <div class="resume-item">
+                                <p class="year">2024</p>
+                                <h3>AI Foundation Program</h3>
+                                <p class="company">SCBX</p>
+                                <p> ทำเเบบทดสอบความรู้พื้นฐานเกี่ยวกับ AI เช่น Machine Learning และ Algorithms, การเขียนโค้ดเพื่อแก้ปัญหาด้วยภาษาโปรแกรม เช่น Python, 
+                                    การสร้างโปรเจคที่ใช้ AI เช่น ระบบแนะนำหรือการประมวลผลภาพ, การวิเคราะห์ข้อมูล เช่น การทำความสะอาดและวิเคราะห์ข้อมูล, 
+                                    ความเข้าใจในทฤษฎี AI เช่น Neural Networks และ Deep Learning, รวมถึงการพิจารณาจริยธรรมและผลกระทบของการใช้ AI ในสังคม.</p>
+                            </div>  
+                            <div class="resume-item">
+                                <p class="year">2023</p>
+                                <h3>Landscape Design</h3>
+                                <p class="company">Design international institute school</p>
+                                <p> ศึกษาการออกแบบและวางแผนการใช้พื้นที่กลางแจ้งโดยการผสมผสานธรรมชาติและสิ่งปลูกสร้างเพื่อสร้างความสวยงามและการใช้งานที่เหมาะสม 
+                                    เช่น การวางผังพื้นที่ การเลือกพืชพรรณ วัสดุ ระบบน้ำ และโครงสร้างต่าง ๆ เพื่อให้ได้ผลลัพธ์ที่มีความสมดุลและยั่งยืน.</p>
+                            </div>  
+                            <div class="resume-item">
+                                <p class="year">2022</p>
+                                <h3>UX Research Methods and
+                                    Best Practices</h3>
+                                <p class="company">In-person Learning</p>
+                                <p> คือการใช้วิธีการวิจัยต่าง ๆ เช่น การสัมภาษณ์ผู้ใช้, การทดสอบใช้งาน (Usability Testing), การสำรวจ (Surveys), การสังเกตการณ์ (Observation), 
+                                    และการวิเคราะห์ข้อมูลเชิงปริมาณและเชิงคุณภาพ เพื่อเข้าใจพฤติกรรมและความต้องการของผู้ใช้ 
+                                    รวมถึงการนำแนวทางที่ดีที่สุดมาใช้ในการออกแบบประสบการณ์ผู้ใช้ที่มีประสิทธิภาพและตอบสนองความต้องการของผู้ใช้.</p>
+                            </div>  
+                            <div class="resume-item">
+                                <p class="year">2017-2019</p>
+                                <h3>B.Sc. (Computer Science)</h3>
+                                <p class="company">Thepsatri rajabhat university</p>
+                                <p> ศึกษาการเขียนโปรแกรม, การวิเคราะห์และออกแบบระบบ, โครงสร้างข้อมูลและอัลกอริธึม, การพัฒนาซอฟต์แวร์, ฐานข้อมูล, เครือข่ายคอมพิวเตอร์, ระบบปฏิบัติการ, 
+                                    ปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง เพื่อเตรียมความพร้อมในการทำงานในอุตสาหกรรมเทคโนโลยีสารสนเทศหรือซอฟต์แวร์.</p>
+                            </div>  
+
+                        </div>
+                </div>
+
+                <div class="resume-detail skills">
+                    <h2 class="heading"><span>ทักษะ</span></h2>
+                    <p class="desc"></p>
+                    <div class="resume-list">
+
+                        <div class="resume-item">
+                            <i class='bx bxl-html5'></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-css3'></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-javascript'></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <!-- <div class="resume-item">
+                            <i class='bx bxl-react'></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-vuejs'></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-tailwind-css'></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-nodejs'></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-mongodb'></i>
+                            <span>MongoDB</span>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <div class="resume-detail about">
+                    <h2 class="heading"><span>เกี่ยวกับฉัน</span></h2>
+                    <p class="desc"></p>
+                <div class="resume-list">
+
+                    <div class="resume-item">
+                        <p>ชื่อ <span>กฤษฎิ์ชยิน คัมภีรยศ</span></p>
+                    </div>
+                    <div class="resume-item">
+                        <p>เพศ <span>ชาย</span></p>
+                    </div>
+                    <div class="resume-item">
+                        <p>อายุ <span>25 ปี</span></p>
+                    </div>
+                    <div class="resume-item">
+                        <p>สถานะ <span>โสด</span></p>
+                    </div>
+                    <div class="resume-item">
+                        <p>เมืองเกิด <span>สระบุรี</span></p>
+                    </div>
+                    <div class="resume-item">
+                        <p>สัญชาติ <span>ไทย</span></p>
+                    </div>
+                    <div class="resume-item">
+                        <p>ประสบการณ์ <span>มากกว่า 3 ปี</span></p>
+                    </div>
+                    <div class="resume-item">
+                        <p>เต็มเวลา <span>พร้อม</span></p>
+                    </div>
+                    <div class="resume-item">
+                        <p>ฟรีแลนซ์ <span>พร้อม</span></p>
+                    </div>
+                    <div class="resume-item">
+                        <p>โทรศัพท์ <span>(+066) 06-2345-7042</span></p>
+                    </div>
+                    <div class="resume-item">
+                        <p>อีเมล <span>Krithayin@gmail.com</span></p>
+                    </div>
+                    <div class="resume-item">
+                        <p>ภาษา <span>ไทย, อังกฤษ</span></p>
+                    </div>                    
+
+
+                </div>
+
+            </div>
+        </div>    
+    </section>
+
+    <section class="portfolio">
+        <h2 class="heading"> <span>โปรเจค</span>ที่ผมทำ</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <div class="portfolio-detail active">
+                    <p class="numb">01</p>
+                    <h3>RPA Project</h3>
+                    <P> ผมสร้างระบบ RPA เพื่อช่วยลดเวลาในการทำงานและข้อผิดพลาดในกระบวนการทำงานของหลายทีมในองค์กร 
+                        โดยใช้เครื่องมือต่างๆ เช่น Power Automate Desktop/Flow หรือการเขียนโปรแกรมด้วย Python 
+                        โดยใช้ไลบรารีต่างๆ เช่น pyautogui, selenium, และ pandas เป็นต้น</P>
+                    <div class="tech">
+                        <p>Lowcode, Python</p>
+                    </div>
+                    <!--
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                    -->
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">02</p>
+                    <h3>Electricity Utility Bill Detection Project</h3>
+                    <P> ผมสร้างระบบตรวจจับเนื้อหาทั้งหมดของบิลค่าสาธารณูปโภคและแปลงเป็นข้อความภาษาไทย 
+                        เมื่อดึงข้อความได้แล้ว จะใช้ Regex กำหนดข้อความเฉพาะส่วนเพื่อตรวจสอบว่าเป็นบิลไฟฟ้าของที่ใด
+                        เช่น การไฟฟ้านครหลวงหรือการไฟฟ้าภูมิภาค หลังจากระบุได้แล้ว ระบบจะดำเนินการตามเงื่อนไข IF 
+                        ที่กำหนดไว้เพื่อประมวลผลข้อความและบันทึกข้อมูลลงในไฟล์ Excel</P>
+                    <div class="tech">
+                        <p>Python</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">03</p>
+                    <h3>Vehicle Detection Project</h3>
+                    <P> ผมใช้ OpenCV ในการพัฒนาระบบตรวจจับยานพาหนะที่สามารถระบุและบันทึกภาพของป้ายทะเบียนรถพร้อมกับภาพเต็มในขณะที่ตรวจจับ 
+                        ระบบจะแสดงลำดับและหมายเลขป้ายทะเบียน เช่น 1_F_1ฒว 4544 (โดยที่ 1 แสดงลำดับ, F แสดงภาพเต็ม, และ 1ฒว 4544 แสดงหมายเลขป้ายทะเบียน) 
+                        ข้อมูลที่ตรวจจับได้จะถูกบันทึกในตำแหน่งที่กำหนด.</P>
+                    <div class="tech">
+                        <p>Python</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">04</p>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">05</p>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">06</p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="portfolio-carousel">
+                    <div class="img-slide">
+
+                        <div class="img-item">
+                            <img src="images/portfolio1.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio2.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio3.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio1.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio1.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio1.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio1.jpg">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <button class="arrow-left disabled"><i class='bx bx-chevron-left' ></i></button>
+                    <button class="arrow-right"><i class='bx bx-chevron-right' ></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>มาร่วมทำงานด้วยกันนะครับ</h2>
+                <p class="desc"></p>
+                <div class="contact-detail">
+                    <i class='bx bx-phone'></i>
+                    <div class="detail">
+                        <p>Phone</p>
+                        <p>06-2345-7042</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class='bx bxs-envelope' ></i>
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>Krithayin@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class='bx bxs-map' ></i>
+                    <div class="detail">
+                        <p>ที่อยู่</p>
+                        <p>อำเภอเมือง จังหวัดสระบุรี 18000 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <form action="">
+                    <h2 class="heading">ติดต่อ<span>ผมเลย</span></h2>
+                    <div class="field-box">
+                        <input type="text" placeholder="ชื่อ" required>
+                        <input type="email" placeholder="ที่อยู่อีเมล" required>
+                        <input type="text" placeholder="หมายเลขโทรศัพท์" required>
+                        <input type="text" placeholder="หัวข้ออีเมล" required>
+                        <textarea name="" id="" placeholder="ข้อความของคุณ" required></textarea>                        
+                    </div>
+                    <button type="submit" class="btn">ส่งข้อความ</button>
+                </form> 
+            </div> 
+        </div>      
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
