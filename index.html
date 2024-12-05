@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=600"> -->
     <title>Responsive Portfolio website - Ikkyu</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
@@ -13,7 +15,36 @@
 
 </head>
 <body>
+    
+    <script>
+        function adjustViewport() {
+            // ลบ meta viewport เดิม
+            let viewportMetaTag = document.querySelector('meta[name="viewport"]');
+            if (viewportMetaTag) {
+                viewportMetaTag.parentNode.removeChild(viewportMetaTag);
+            }
 
+            // สร้าง meta viewport ใหม่
+            let newMetaTag = document.createElement('meta');
+            newMetaTag.name = "viewport";
+
+            // ตรวจสอบขนาดหน้าจอและตั้งค่าค่าตามขนาดนั้น
+            if (window.innerWidth < 700) {
+                newMetaTag.content = "width=600";  // ถ้าหน้าจอเล็กกว่า 700px
+            } else {
+                newMetaTag.content = "width=1440";  // ถ้าหน้าจอกว้างกว่า 700px
+            }
+
+            // เพิ่ม meta viewport ใหม่ลงใน head
+            document.getElementsByTagName('head')[0].appendChild(newMetaTag);
+        }
+
+        // เรียกใช้ฟังก์ชันเมื่อหน้าเว็บโหลดขึ้น
+        window.addEventListener('load', adjustViewport);
+        
+        // เรียกใช้ฟังก์ชันทุกครั้งที่มีการปรับขนาดหน้าจอ
+        window.addEventListener('resize', adjustViewport);
+    </script>
 
     <header class="active">
         <!-- <a href="#" class="logo">อิคคิว</a> -->
@@ -75,6 +106,79 @@
         </div>
     </section>
 
+    <!--services section-->
+    <!--
+    <section class="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="service-container">
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-code-alt'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Web development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti rerum, 
+                    alias quidem dolorem nam pariatur nesciunt maxime ea ipsa maiores, 
+                    itaque quae minima tempora id, quisquam aspernatur eveniet sit consectetur.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-code-alt'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti rerum, 
+                    alias quidem dolorem nam pariatur nesciunt maxime ea ipsa maiores, 
+                    itaque quae minima tempora id, quisquam aspernatur eveniet sit consectetur.</p>
+                </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bxs-paint' ></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Grahic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti rerum, 
+                    alias quidem dolorem nam pariatur nesciunt maxime ea ipsa maiores, 
+                    itaque quae minima tempora id, quisquam aspernatur eveniet sit consectetur.</p>
+                </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-code-alt'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>SEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti rerum, 
+                    alias quidem dolorem nam pariatur nesciunt maxime ea ipsa maiores, 
+                    itaque quae minima tempora id, quisquam aspernatur eveniet sit consectetur.</p>
+                </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-code-alt'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Video Editor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti rerum, 
+                    alias quidem dolorem nam pariatur nesciunt maxime ea ipsa maiores, 
+                    itaque quae minima tempora id, quisquam aspernatur eveniet sit consectetur.</p>
+                </div>
+            
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-code-alt'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Photography</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti rerum, 
+                    alias quidem dolorem nam pariatur nesciunt maxime ea ipsa maiores, 
+                    itaque quae minima tempora id, quisquam aspernatur eveniet sit consectetur.</p>
+                </div>
+       
+        </div>
+    </section> -->
     
     <section class="resume">
         <div class="resume-container">
