@@ -23,28 +23,34 @@
             if (viewportMetaTag) {
                 viewportMetaTag.parentNode.removeChild(viewportMetaTag);
             }
-
+    
             // สร้าง meta viewport ใหม่
             let newMetaTag = document.createElement('meta');
             newMetaTag.name = "viewport";
-
+    
             // ตรวจสอบขนาดหน้าจอและตั้งค่าค่าตามขนาดนั้น
-            if (window.innerWidth < 700) {
-                newMetaTag.content = "width=600";  // ถ้าหน้าจอเล็กกว่า 700px
+            if (window.innerWidth < 375) {
+                newMetaTag.content = "width=450, height=1100";  // ถ้าหน้าจอเล็กกว่า 375px
+            } else if (window.innerWidth < 540) {
+                newMetaTag.content = "width=500, height=1200";  // ถ้าหน้าจอเล็กกว่า 540px
             } else {
-                newMetaTag.content = "width=1440";  // ถ้าหน้าจอกว้างกว่า 700px
+                newMetaTag.content = "width=720, height=1400";  // ถ้าหน้าจอกว้างกว่า 540px
             }
-
+    
             // เพิ่ม meta viewport ใหม่ลงใน head
             document.getElementsByTagName('head')[0].appendChild(newMetaTag);
         }
-
+    
         // เรียกใช้ฟังก์ชันเมื่อหน้าเว็บโหลดขึ้น
         window.addEventListener('load', adjustViewport);
-        
+    
         // เรียกใช้ฟังก์ชันทุกครั้งที่มีการปรับขนาดหน้าจอ
         window.addEventListener('resize', adjustViewport);
     </script>
+    
+    
+
+
 
     <header class="active">
         <!-- <a href="#" class="logo">อิคคิว</a> -->
@@ -505,4 +511,3 @@
 </body>
 
 </html>
-
